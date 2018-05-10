@@ -1,0 +1,27 @@
+----------------------------------------Objetivo---------------------------------------
+º Se el primero en alcanzar la joya para ganar
+----------------------------------------Juego------------------------------------------
+º Cada jugador tiene una mazo de cartas para robar y una mano con sus cartas robadas.
+º El juego empieza con tres cartas en la mano de cada jugador.
+º En cada turno podras elegir si robar, ejecutar una secuencia o lanzar tu carta bicho 
+º a otro jugador.
+º Tienes cinco tipos de cartas: Avanzar, GiroDerecha, GiroIzquierda, Laser y Bicho.
+º Si eliges ejecutar una secuencia podras elegir varias cartas de tu mano 
+º para generar una secuencia de movimiento.
+º Te podras mover por todo el tablero, empujar las cajas  y derretir los hielos 
+º para atravesarlos. Los muros no pueden ser atravesados 
+º y la cajas ardiendo no pueden ser empujadas.
+----------------------------------------Cartas------------------------------------------
+ º Avanzar: Mueve tu tortuga una casilla hacia la dirrecion a la que esta mirando.
+ º GiroDerecha y GiroIzquierda: Cambia la direccion a la que mira tu tortuga.
+ º Laser: Derrite los hielos, empuja a otros jugadores y quema las cajas 
+ º impidiendo que se puedan mover.
+ º Bicho: Deshace la ultima accion de un jugador (Es usada una vez por partida)
+----------------------------------------Controles----------------------------------------
+ º R: robar carta.
+ º E: introducir y ejecutar secuencia de cartas.
+ º B: lanzar bicho.
+ º Flecha arriba: introducir avanzar en secuencia.
+ º Flecha derecha: introducir giro derecha en secuencia.
+ º Flecha izquierda: introducir giro izquierda en secuencia.
+ º Barra espaciadora: introducir laser en secuencia.
