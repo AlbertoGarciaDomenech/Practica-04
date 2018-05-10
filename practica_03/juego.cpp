@@ -28,7 +28,7 @@ void avanzar(tJuego & juego, int var_fila, int var_columna); //Hace avanzar a un
 bool casillaOriginalDisponible(tJuego & juego, tCoordenadas pos_inicial); //Comprueba si la casilla en la que empezo una tortuga esta disponible
 void dispararJugador(tJuego & juego, tDir direccion, int var_fila, int var_columna); //Empuja a un jugador cuando se le dispara un laser
 void bichoSecuencia(tJuego & juego, int jugador_objetivo); //Si se lanza el bicho a un jugador que habia ejecutado una secuencia la deshace
-//hola
+
 bool cargarJuego(tJuego & juego)
 {
 	bool tablero_cargado;
