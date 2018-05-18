@@ -2,6 +2,7 @@
 #define DIBUJO_H
 
 #include "juego.h"
+#include "checkML.h"
 
 void dibujarTablero(const tJuego & juego);
 //Muestra por pantalla el tablero de juego en un instante de la partida

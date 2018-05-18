@@ -15,7 +15,6 @@ void ordenarRanking(tPuntuaciones & puntuaciones, int pos); //Ordena el ranking 
 
 void inicializar(tPuntuaciones & puntuaciones)
 {
-	//puntuaciones.ranking = new tPtrInfoJugador[MAX_RANKING]; //PARTE OPCIONAL
 	puntuaciones.ranking = new tInfoJugador[MAX_RANKING];
 	puntuaciones.contador = 0;
 	puntuaciones.tam = MAX_RANKING;

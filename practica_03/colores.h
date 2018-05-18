@@ -2,6 +2,7 @@
 #define COLORES_H_
 
 #include "juego.h"
+#include "checkML.h"
 
 const int PALETA[NUM_ESTADOS + MAX_JUGADORES] = { 1, 11, 7, 4, 12, 12, 5, 13, 9, 10, 3 };
 // VACIA, HIELO, MURO, CAJA, JOYA, FUEGO, TORTUGA, NUM_ESTADOS

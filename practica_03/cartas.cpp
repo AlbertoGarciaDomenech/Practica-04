@@ -4,7 +4,7 @@ using namespace std;
 
 void liberar(tMazo & mazo)
 {
-	for (int i = 0; i < mazo.num_cartas; i++)
+	for (int i = 0; i < MAX_CARTAS; i++)
 	{
 		delete mazo.cartas[i];
 		mazo.cartas[i] = nullptr;

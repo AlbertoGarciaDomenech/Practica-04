@@ -1,6 +1,8 @@
 #ifndef CARTAS_H
 #define CARTAS_H
 
+#include "checkML.h"
+
 const int MAX_AVANZAR = 18;
 const int MAX_GIRO = 8; //8 para izquierda y 8 para derecha
 const int MAX_LASER = 4;

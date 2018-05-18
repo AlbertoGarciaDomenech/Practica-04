@@ -259,13 +259,15 @@ bool accionSecuencia(tJuego & juego, tMazo & mazo)
 	while ((!joya) && (i < secuencia.num_cartas))
 	{
 		carta = *(secuencia.cartas[i]);
+		delete secuencia.cartas[i];
 		joya = mover(juego, carta, false);
 		insertar(mazo, carta, arriba);
 
 		i++;
 	}
 
-	liberar(secuencia);
+	//liberar(secuencia);
+	
 	return joya;
 }
 
@@ -651,6 +653,8 @@ void reiniciarPartida(tJuego & juego)
 		juego.jugadores[i].mano.num_avanzar = 0;
 		juego.jugadores[i].mano.num_derecha = 0;
 		juego.jugadores[i].mano.num_izquierda = 0;
+		juego.jugadores[i].mano.num_laser = 0;
+		juego.jugadores[i].mano.num_bicho = 0;
 
 		juego.jugadores[i].sigue_jugando = true;
 

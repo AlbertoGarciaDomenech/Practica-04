@@ -2,6 +2,7 @@
 #define PUNTUACIONES_H
 
 #include <string>
+#include "checkML.h"
 using namespace std;
 
 const int MAX_RANKING = 4;
@@ -12,12 +13,8 @@ typedef struct
 	int puntos;
 }tInfoJugador;
 
-typedef tInfoJugador * tPtrInfoJugador;		//PARTE OPCIONAL
-typedef tPtrInfoJugador * tArrayDinamico;	//PARTE OPCIONAL
-
 typedef struct
 {
-	//tArrayDinamico ranking;	//PARTE OPCIONAL
 	tInfoJugador * ranking;
 	int contador;
 	int tam; //capacidad actual del array
