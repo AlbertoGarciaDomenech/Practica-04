@@ -70,13 +70,13 @@ int main()
 
 	} while (opcion_menu != 0);
 
-	guardarPuntuaciones(puntuaciones);
 
 	cout << "-------" << endl;
 	cout << "RANKING FINAL: " << endl;
 	mostrarPuntuaciones(puntuaciones);
 	cout << "-------" << endl;
 
+	guardarPuntuaciones(puntuaciones);
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF); //DEBUG: VER MEMORIA DINAMICA
 

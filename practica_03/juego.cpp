@@ -265,6 +265,7 @@ bool accionSecuencia(tJuego & juego, tMazo & mazo)
 		i++;
 	}
 
+	liberar(secuencia);
 	return joya;
 }
 
@@ -650,12 +651,10 @@ void reiniciarPartida(tJuego & juego)
 		juego.jugadores[i].mano.num_avanzar = 0;
 		juego.jugadores[i].mano.num_derecha = 0;
 		juego.jugadores[i].mano.num_izquierda = 0;
-		juego.jugadores[i].mano.num_laser = 0;
-	}
 
-	for (int i = 0; i < juego.ganadores.num_ganadores; i++)
-	{
 		juego.jugadores[i].sigue_jugando = true;
+
+		liberar(juego.jugadores[i].mazo);
 	}
 }
 

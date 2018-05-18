@@ -12,8 +12,12 @@ typedef struct
 	int puntos;
 }tInfoJugador;
 
+typedef tInfoJugador * tPtrInfoJugador;		//PARTE OPCIONAL
+typedef tPtrInfoJugador * tArrayDinamico;	//PARTE OPCIONAL
+
 typedef struct
 {
+	//tArrayDinamico ranking;	//PARTE OPCIONAL
 	tInfoJugador * ranking;
 	int contador;
 	int tam; //capacidad actual del array
@@ -29,8 +33,9 @@ bool cargarPuntuaciones(tPuntuaciones & puntuaciones);
 //Carga las puntuaciones del fichero "puntuaciones.txt" a un array de estructuras (tPuntuaciones puntuaciones)
 //Devuelve si se han podido cargar las puntuaciones correctamente
 
-void guardarPuntuaciones(const tPuntuaciones & puntuaciones);
+void guardarPuntuaciones(tPuntuaciones & puntuaciones);
 //Guarda los cambios producidos en las puntuaciones durante la partida, en el fichero "puntuaciones.txt"
+//Libera la memoria dinamica que almacena las puntuaciones
 
 void mostrarPuntuaciones(const tPuntuaciones & puntuaciones);
 //Muestra las puntuaciones de los jugadores una vez cargados en el array de estructuras (tPuntuaciones puntuaciones)

@@ -4,11 +4,9 @@ using namespace std;
 
 void liberar(tMazo & mazo)
 {
-	delete[] mazo.cartas;
-
 	for (int i = 0; i < mazo.num_cartas; i++)
 	{
-		//delete mazo.cartas[i];
+		delete mazo.cartas[i];
 		mazo.cartas[i] = nullptr;
 	}
 	mazo.num_cartas = 0;
@@ -56,8 +54,6 @@ void crearVacia(tMazo & mazo)
 	mazo.inicio = 0;
 	mazo.num_cartas = 0;
 }
-
-/////////////////////////////////////////////////////////////////////////////////
 
 bool sacar(tMazo & mazo, tCarta & carta, bool arriba)
 {
@@ -137,37 +133,3 @@ void insertar(tMazo & mazo, tCarta & carta, bool arriba)
 		}
 	}
 }
-
-/*
-void crearMazoAleatorio(tMazo & mazo)
-{
-	mazo.inicio = 0;
-	mazo.num_cartas = 0;
-
-	for (int i = 0; i < MAX_AVANZAR; i++, mazo.num_cartas++)
-	{
-		mazo.cartas[mazo.num_cartas] = AVANZAR;
-	}
-
-	for (int i = 0; i < MAX_GIRO; i++, mazo.num_cartas++)
-	{
-		mazo.cartas[mazo.num_cartas] = GIRODERECHA;
-	}
-
-	for (int i = 0; i < MAX_GIRO; i++, mazo.num_cartas++)
-	{
-		mazo.cartas[mazo.num_cartas] = GIROIZQUIERDA;
-	}
-
-	for (int i = 0; i < MAX_LASER; i++, mazo.num_cartas++)
-	{
-		mazo.cartas[mazo.num_cartas] = LASER;
-	}
-	for (int i = 0; i < MAX_BICHO; i++, mazo.num_cartas++)
-	{
-		mazo.cartas[mazo.num_cartas] = BICHO;
-	}
-
-	random_shuffle(begin(mazo.cartas), end(mazo.cartas));
-}
-*/
